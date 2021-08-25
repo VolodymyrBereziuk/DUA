@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationDetailsFooterView" customModule="TosMap" customModuleProvider="target">
+            <connections>
+                <outlet property="commentsButton" destination="Jlk-PW-S2i" id="QBf-fI-jZ4"/>
+                <outlet property="routeButton" destination="vQs-bn-YBT" id="foE-CZ-0jl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Tqn-QX-hr7">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Zw-eE-a4w">
+                    <rect key="frame" x="21" y="0.0" width="343" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQs-bn-YBT">
+                            <rect key="frame" x="0.0" y="24" width="285" height="42"/>
+                            <color key="backgroundColor" name="greenGradientTop"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Hcd-7v-0ka"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Прокласти маршрут" image="route"/>
+                            <connections>
+                                <action selector="routeButtonTapped:" destination="-1" eventType="touchUpInside" id="UKo-XG-hn9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-PW-S2i">
+                            <rect key="frame" x="295" y="24" width="48" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="7wD-QN-wct"/>
+                                <constraint firstAttribute="height" constant="42" id="gfN-j8-4ed"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" image="Comment"/>
+                            <connections>
+                                <action selector="commentButtonTapped:" destination="-1" eventType="touchUpInside" id="eEc-hX-4Ch"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4E4-uZ-ghw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4E4-uZ-ghw" firstAttribute="trailing" secondItem="1Zw-eE-a4w" secondAttribute="trailing" constant="21" id="6uO-H7-MGL"/>
+                <constraint firstItem="1Zw-eE-a4w" firstAttribute="leading" secondItem="4E4-uZ-ghw" secondAttribute="leading" constant="21" id="fa7-Ut-13n"/>
+                <constraint firstItem="1Zw-eE-a4w" firstAttribute="bottom" secondItem="4E4-uZ-ghw" secondAttribute="bottom" id="hFp-Xd-SUe"/>
+                <constraint firstItem="1Zw-eE-a4w" firstAttribute="top" secondItem="Tqn-QX-hr7" secondAttribute="top" id="wwi-rA-8br"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-178.98550724637681" y="-249.77678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comment" width="24" height="24"/>
+        <image name="route" width="24" height="24"/>
+        <namedColor name="greenGradientTop">
+            <color red="0.61960784313725492" green="0.82352941176470584" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPlacesView" customModule="TosMap" customModuleProvider="target">
+            <connections>
+                <outlet property="placesTableView" destination="1Z2-EV-UYT" id="daC-Hq-Tdf"/>
+                <outlet property="showAllButton" destination="sCK-hH-XSU" id="dnc-7d-rke"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Z2-EV-UYT">
+                    <rect key="frame" x="0.0" y="44" width="414" height="356"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-hH-XSU">
+                    <rect key="frame" x="20" y="405" width="374" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="L9o-Do-gDv"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="showAllButtonTapped:" destination="-1" eventType="touchUpInside" id="xio-2W-Vwd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sCK-hH-XSU" secondAttribute="bottom" constant="25" id="Jzl-Su-Pz1"/>
+                <constraint firstItem="1Z2-EV-UYT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PDh-FE-isi"/>
+                <constraint firstItem="1Z2-EV-UYT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eDO-wy-gem"/>
+                <constraint firstItem="sCK-hH-XSU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fWF-Xu-gJU"/>
+                <constraint firstItem="sCK-hH-XSU" firstAttribute="top" secondItem="1Z2-EV-UYT" secondAttribute="bottom" constant="5" id="rTN-yf-UuK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sCK-hH-XSU" secondAttribute="trailing" constant="20" id="uM9-Eh-PLN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Z2-EV-UYT" secondAttribute="trailing" id="ud6-rs-fWM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="31.473214285714285"/>
+        </view>
+    </objects>
+</document>

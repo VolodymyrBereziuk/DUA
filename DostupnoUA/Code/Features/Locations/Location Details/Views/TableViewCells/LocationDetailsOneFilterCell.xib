@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationDetailsOneFilterCell" rowHeight="175" id="1F3-ZG-a13" customClass="LocationDetailsOneFilterCell" customModule="Доступно_MAPS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1F3-ZG-a13" id="rjI-EM-duz">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вбиральня" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my4-em-0WY">
+                        <rect key="frame" x="43" y="22" width="277" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" name="warmGrey"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Людям зі слабкими кистями може бути важко закриватись на замок зсередини." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdx-ag-cHm">
+                        <rect key="frame" x="43" y="44" width="277" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="warmGrey"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQx-cs-57L">
+                        <rect key="frame" x="0.0" y="18" width="9" height="45"/>
+                        <color key="backgroundColor" name="yellowishGreen"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="QdP-DY-A1G"/>
+                            <constraint firstAttribute="height" constant="45" id="hE8-56-LIS"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HBX-LC-msP">
+                        <rect key="frame" x="19" y="21" width="18" height="18"/>
+                        <color key="tintColor" name="slateGrey"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="CCZ-JI-IEb"/>
+                            <constraint firstAttribute="height" constant="18" id="XcP-KY-9Jo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стан вбиральні:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8H-O7-TZu">
+                        <rect key="frame" x="43" y="87.5" width="277" height="13.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" name="warmGrey"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="облаштована / (поручні біля унітазу • ширина дверей від 80см • простора ((розміри кімнати вбиральні: 165 x 180см або більше)) " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-ei-e0X">
+                        <rect key="frame" x="43" y="107" width="277" height="39.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" name="greyishBrown"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhv-Jj-Ey5">
+                        <rect key="frame" x="43" y="169" width="277" height="1"/>
+                        <color key="backgroundColor" name="paleGrey"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SPJ-rT-Qpo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HBX-LC-msP" firstAttribute="top" secondItem="rjI-EM-duz" secondAttribute="top" constant="21" id="5j3-Id-aMN"/>
+                    <constraint firstItem="Jhv-Jj-Ey5" firstAttribute="leading" secondItem="my4-em-0WY" secondAttribute="leading" id="Bmo-rG-z8R"/>
+                    <constraint firstItem="YeF-ei-e0X" firstAttribute="top" secondItem="j8H-O7-TZu" secondAttribute="bottom" constant="6" id="Ekx-vI-aCD"/>
+                    <constraint firstItem="j8H-O7-TZu" firstAttribute="trailing" secondItem="my4-em-0WY" secondAttribute="trailing" id="GeB-I3-mfL"/>
+                    <constraint firstItem="j8H-O7-TZu" firstAttribute="leading" secondItem="my4-em-0WY" secondAttribute="leading" id="KhP-M1-fll"/>
+                    <constraint firstItem="YeF-ei-e0X" firstAttribute="leading" secondItem="j8H-O7-TZu" secondAttribute="leading" id="MN5-Wx-Oj6"/>
+                    <constraint firstItem="cdx-ag-cHm" firstAttribute="leading" secondItem="my4-em-0WY" secondAttribute="leading" id="NCe-GM-fk2"/>
+                    <constraint firstItem="cdx-ag-cHm" firstAttribute="trailing" secondItem="my4-em-0WY" secondAttribute="trailing" id="ROf-vq-IXf"/>
+                    <constraint firstItem="j8H-O7-TZu" firstAttribute="top" secondItem="cdx-ag-cHm" secondAttribute="bottom" constant="12" id="Zvn-BV-Ivu"/>
+                    <constraint firstItem="YeF-ei-e0X" firstAttribute="trailing" secondItem="j8H-O7-TZu" secondAttribute="trailing" id="b8f-Kv-zaM"/>
+                    <constraint firstItem="uQx-cs-57L" firstAttribute="leading" secondItem="rjI-EM-duz" secondAttribute="leading" id="cfl-su-xwv"/>
+                    <constraint firstItem="cdx-ag-cHm" firstAttribute="top" secondItem="my4-em-0WY" secondAttribute="bottom" constant="6" id="dIR-As-F2n"/>
+                    <constraint firstItem="uQx-cs-57L" firstAttribute="top" secondItem="rjI-EM-duz" secondAttribute="top" constant="18" id="ddY-Wk-lvS"/>
+                    <constraint firstItem="Jhv-Jj-Ey5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YeF-ei-e0X" secondAttribute="bottom" constant="15" id="gYX-TB-HSk"/>
+                    <constraint firstAttribute="bottom" secondItem="Jhv-Jj-Ey5" secondAttribute="bottom" constant="5" id="kaq-UD-1Kr"/>
+                    <constraint firstItem="my4-em-0WY" firstAttribute="centerY" secondItem="HBX-LC-msP" secondAttribute="centerY" id="mtq-FK-K9w"/>
+                    <constraint firstItem="HBX-LC-msP" firstAttribute="leading" secondItem="uQx-cs-57L" secondAttribute="trailing" constant="10" id="qSs-yA-bnh"/>
+                    <constraint firstItem="my4-em-0WY" firstAttribute="leading" secondItem="HBX-LC-msP" secondAttribute="trailing" constant="6" id="qUO-cT-QSY"/>
+                    <constraint firstAttribute="trailing" secondItem="my4-em-0WY" secondAttribute="trailing" constant="20" id="v3P-3G-DOp"/>
+                    <constraint firstItem="Jhv-Jj-Ey5" firstAttribute="trailing" secondItem="my4-em-0WY" secondAttribute="trailing" id="vR5-hl-YQY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="cdx-ag-cHm" id="6un-cN-2Tj"/>
+                <outlet property="firstFilterDescription" destination="YeF-ei-e0X" id="jyP-mj-N2K"/>
+                <outlet property="firstFilterTitle" destination="j8H-O7-TZu" id="TPI-W7-xOZ"/>
+                <outlet property="gradeView" destination="uQx-cs-57L" id="ToW-pD-E3W"/>
+                <outlet property="iconImageView" destination="HBX-LC-msP" id="ErW-9s-EJ6"/>
+                <outlet property="nameLabel" destination="my4-em-0WY" id="UgX-kp-fbV"/>
+            </connections>
+            <point key="canvasLocation" x="-21.739130434782609" y="-173.10267857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="greyishBrown">
+            <color red="0.36078431372549019" green="0.37254901960784315" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paleGrey">
+            <color red="0.92900002002716064" green="0.93699997663497925" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="slateGrey">
+            <color red="0.40392156862745099" green="0.40392156862745099" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="warmGrey">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellowishGreen">
+            <color red="0.63529411764705879" green="0.85490196078431369" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LineTableSectionSeparator" customModule="DostupnoUA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-Ya-SH2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjx-hr-2y2">
+                            <rect key="frame" x="20" y="49.5" width="374" height="1"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="0pO-Nk-WYF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jjx-hr-2y2" firstAttribute="leading" secondItem="F3l-Ya-SH2" secondAttribute="leading" constant="20" id="Dpq-9J-6lF"/>
+                        <constraint firstItem="jjx-hr-2y2" firstAttribute="centerY" secondItem="F3l-Ya-SH2" secondAttribute="centerY" id="RbT-Eo-fYN"/>
+                        <constraint firstAttribute="trailing" secondItem="jjx-hr-2y2" secondAttribute="trailing" constant="20" id="SR8-4g-vKu"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="bCo-8X-41z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="F3l-Ya-SH2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Z5-ur-7sF"/>
+                <constraint firstAttribute="bottom" secondItem="F3l-Ya-SH2" secondAttribute="bottom" id="RPc-yB-EXL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F3l-Ya-SH2" secondAttribute="trailing" id="e5k-9m-8Zc"/>
+                <constraint firstItem="F3l-Ya-SH2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h8k-dW-Q9k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lineSeparatorView" destination="jjx-hr-2y2" id="02V-mt-hzA"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="153"/>
+        </view>
+    </objects>
+</document>

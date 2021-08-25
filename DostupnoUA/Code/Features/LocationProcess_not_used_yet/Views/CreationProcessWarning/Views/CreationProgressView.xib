@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreationProgressView" customModule="Доступно_MAPS" customModuleProvider="target">
+            <connections>
+                <outlet property="progressTableView" destination="gdf-dp-QHf" id="TXs-8Y-zzb"/>
+                <outlet property="titleLabel" destination="otA-G4-AZ8" id="rt6-O8-sfS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="471"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otA-G4-AZ8">
+                    <rect key="frame" x="21" y="6" width="372" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gdf-dp-QHf" customClass="SelfSizedTableView" customModule="Доступно_MAPS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="32.5" width="414" height="438.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="otA-G4-AZ8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="0fQ-9D-ZT5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gdf-dp-QHf" secondAttribute="trailing" id="HJU-Af-8lH"/>
+                <constraint firstItem="gdf-dp-QHf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PhD-Pv-FTh"/>
+                <constraint firstItem="gdf-dp-QHf" firstAttribute="top" secondItem="otA-G4-AZ8" secondAttribute="bottom" constant="6" id="UKo-vv-jKJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gdf-dp-QHf" secondAttribute="bottom" id="rin-gr-wcB"/>
+                <constraint firstItem="otA-G4-AZ8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="udq-95-pfe"/>
+                <constraint firstAttribute="trailing" secondItem="otA-G4-AZ8" secondAttribute="trailing" constant="21" id="ys0-NC-Hgu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="0.0" y="289.62053571428572"/>
+        </view>
+    </objects>
+</document>

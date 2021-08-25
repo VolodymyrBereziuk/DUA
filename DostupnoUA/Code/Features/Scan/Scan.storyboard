@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan View Controller-->
+        <scene sceneID="45V-1W-50e">
+            <objects>
+                <viewController storyboardIdentifier="ScanViewController" id="x0h-oD-eig" customClass="ScanViewController" customModule="TosMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAp-1z-Kgl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="49" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElK-t4-vMe" customClass="TabBarView" customModule="TosMap" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="847" width="414" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-y8-HFN" customClass="QRScannerView" customModule="TosMap" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="803"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label123123" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yih-Li-QqU">
+                                <rect key="frame" x="16" y="438" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yih-Li-QqU" firstAttribute="centerY" secondItem="zAp-1z-Kgl" secondAttribute="centerY" id="53V-NY-syw"/>
+                            <constraint firstAttribute="bottom" secondItem="ElK-t4-vMe" secondAttribute="bottom" id="7hV-GK-Htd"/>
+                            <constraint firstItem="Mb9-y8-HFN" firstAttribute="leading" secondItem="zVa-dP-Ir0" secondAttribute="leading" id="7uH-nc-mX2"/>
+                            <constraint firstItem="zVa-dP-Ir0" firstAttribute="trailing" secondItem="Mb9-y8-HFN" secondAttribute="trailing" id="9eI-qa-YYX"/>
+                            <constraint firstItem="ElK-t4-vMe" firstAttribute="top" secondItem="Mb9-y8-HFN" secondAttribute="bottom" id="Amr-fb-VBq"/>
+                            <constraint firstItem="zVa-dP-Ir0" firstAttribute="trailing" secondItem="Yih-Li-QqU" secondAttribute="trailing" constant="16" id="C3g-JO-hfx"/>
+                            <constraint firstItem="Yih-Li-QqU" firstAttribute="leading" secondItem="zVa-dP-Ir0" secondAttribute="leading" constant="16" id="KPg-4m-6D9"/>
+                            <constraint firstItem="ElK-t4-vMe" firstAttribute="leading" secondItem="zVa-dP-Ir0" secondAttribute="leading" id="Qd7-Ob-L8f"/>
+                            <constraint firstItem="Mb9-y8-HFN" firstAttribute="top" secondItem="zVa-dP-Ir0" secondAttribute="top" id="q20-8i-LWJ"/>
+                            <constraint firstItem="zVa-dP-Ir0" firstAttribute="trailing" secondItem="ElK-t4-vMe" secondAttribute="trailing" id="tVT-mP-1Ac"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zVa-dP-Ir0"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraDisabledAlertLabel" destination="Yih-Li-QqU" id="mtz-6d-VzX"/>
+                        <outlet property="qrCodeScannerView" destination="Mb9-y8-HFN" id="jhe-BV-xAI"/>
+                        <outlet property="tabBarView" destination="ElK-t4-vMe" id="g00-bZ-0bc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jm-gJ-dwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="161.38392857142856"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Map Position View Controller-->
+        <scene sceneID="gVN-8K-1pM">
+            <objects>
+                <viewController storyboardIdentifier="LocationMapPositionViewController" id="6F1-sC-gcI" customClass="LocationMapPositionViewController" customModule="Доступно_MAPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LfE-mA-QVT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJA-T5-HPI" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-2K-MKK">
+                                <rect key="frame" x="20" y="800" width="306" height="42"/>
+                                <color key="backgroundColor" name="greenGradientTop"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="dyz-Ue-2xl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Прокласти маршрут" image="route"/>
+                                <connections>
+                                    <action selector="routeButtonTapped:" destination="6F1-sC-gcI" eventType="touchUpInside" id="S8w-ls-b6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13C-n2-F9V">
+                                <rect key="frame" x="346" y="800" width="48" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="WH8-3Q-3d4"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="myLocationButtonTapped:" destination="6F1-sC-gcI" eventType="touchUpInside" id="aQl-Qz-n9e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="13C-n2-F9V" firstAttribute="leading" secondItem="vgN-2K-MKK" secondAttribute="trailing" constant="20" id="6Cj-vL-AmC"/>
+                            <constraint firstItem="rx9-iI-r8l" firstAttribute="trailing" secondItem="fJA-T5-HPI" secondAttribute="trailing" id="7Hu-62-dsI"/>
+                            <constraint firstItem="fJA-T5-HPI" firstAttribute="top" secondItem="rx9-iI-r8l" secondAttribute="top" id="HIU-GZ-DnK"/>
+                            <constraint firstItem="vgN-2K-MKK" firstAttribute="top" secondItem="13C-n2-F9V" secondAttribute="top" id="JRK-jp-bgR"/>
+                            <constraint firstItem="rx9-iI-r8l" firstAttribute="trailing" secondItem="13C-n2-F9V" secondAttribute="trailing" constant="20" id="R6h-pw-Qlb"/>
+                            <constraint firstItem="vgN-2K-MKK" firstAttribute="bottom" secondItem="13C-n2-F9V" secondAttribute="bottom" id="cNv-uH-RYJ"/>
+                            <constraint firstItem="rx9-iI-r8l" firstAttribute="bottom" secondItem="vgN-2K-MKK" secondAttribute="bottom" constant="20" id="d48-PA-43Z"/>
+                            <constraint firstItem="vgN-2K-MKK" firstAttribute="leading" secondItem="rx9-iI-r8l" secondAttribute="leading" constant="20" id="iTc-we-Skx"/>
+                            <constraint firstItem="fJA-T5-HPI" firstAttribute="leading" secondItem="rx9-iI-r8l" secondAttribute="leading" id="qfG-qD-9rY"/>
+                            <constraint firstAttribute="bottom" secondItem="fJA-T5-HPI" secondAttribute="bottom" id="tGp-Ll-BPq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rx9-iI-r8l"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fJA-T5-HPI" id="34c-b8-GIX"/>
+                        <outlet property="myLocationButton" destination="13C-n2-F9V" id="9vZ-Y4-90n"/>
+                        <outlet property="routeButton" destination="vgN-2K-MKK" id="N4C-gu-rFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XbJ-8A-jzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="route" width="24" height="24"/>
+        <namedColor name="greenGradientTop">
+            <color red="0.61960784313725492" green="0.82352941176470584" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

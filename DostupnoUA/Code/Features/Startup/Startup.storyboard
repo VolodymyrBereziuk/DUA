@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Startup View Controller-->
+        <scene sceneID="jEv-yj-24i">
+            <objects>
+                <viewController storyboardIdentifier="StartupViewController" id="bVQ-sg-DOx" customClass="StartupViewController" customModule="Dostupno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="as7-3p-WtU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logomark" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-mi-L9O">
+                                <rect key="frame" x="50" y="356.5" width="314" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jCU-mi-L9O" secondAttribute="height" multiplier="747:197" id="JiI-Qn-bWX"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lyW-wD-Yet">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" systemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aF5-TS-moq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jCU-mi-L9O" firstAttribute="centerY" secondItem="as7-3p-WtU" secondAttribute="centerY" constant="-50" id="65h-mr-7Ts"/>
+                            <constraint firstItem="lyW-wD-Yet" firstAttribute="centerX" secondItem="as7-3p-WtU" secondAttribute="centerX" id="K6D-aH-teV"/>
+                            <constraint firstItem="jCU-mi-L9O" firstAttribute="leading" secondItem="as7-3p-WtU" secondAttribute="leading" constant="50" id="ab8-6H-PUd"/>
+                            <constraint firstItem="lyW-wD-Yet" firstAttribute="centerY" secondItem="as7-3p-WtU" secondAttribute="centerY" id="kXE-HQ-LdC"/>
+                            <constraint firstItem="jCU-mi-L9O" firstAttribute="centerX" secondItem="as7-3p-WtU" secondAttribute="centerX" id="o1N-HB-UMe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="lyW-wD-Yet" id="FgS-qr-lsz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bam-yb-pcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logomark" width="747" height="197"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

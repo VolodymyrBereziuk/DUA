@@ -1,0 +1,267 @@
+//generic
+"generic.error.unknown" = "Oops, an error occurred:(";
+
+"generic.grade.good" = "excellent";
+"generic.grade.normal" = "good";
+"generic.grade.bad" = "bad";
+
+"generic.cancel" = "Сancel";
+
+"generic.supportDostupno.title" = "Help Dostupno team";
+"generic.aboutDostupno.title" = "About Dostupno";
+
+//Profile
+"profile.personalData.title" = "My personal data";
+"profile.actions.title" = "Activities";
+"profile.favouriteLocations.title" = "Favourite locations";
+"profile.articles.title" = "Articles";
+"profile.offeredLocations.title" = "Suggested locations";
+"profile.toDostupnoSite.title" = "Go to Dostupno.UA";
+"profile.settings.title" = "Settings";
+"profile.logout.title" = "Log out";
+"profile.addEmail.title" = "Add email";
+"profile.addPhoneNumber.title" = "Add a phone number";
+"profile.addCity.title" = "Select a city";
+
+//Volunteer
+"volunteer.title" = "Become a volunteer";
+"volunteer.description" = "You can join our activities and help Dostupno.UA. Join and share your initiative to be helpful.";
+"volunteer.button.title" = "Become a volunteer";
+
+//Map
+"map.showLocationsButton.title" = "Show locations";
+"map.addButton.title" = "Offer location";
+"map.search.cancel.title" = "Cancel";
+"map.search.placeholder" = "Search";
+"map.search.showAllResults" = "Show all results(#VALUE#)";
+"search.placeholder.text" = "Sorry, your search couldn't be found:(";
+
+//Filters
+"filter.title" = "Filters";
+"filter.citySearch.title" = "Search City";
+"filter.citySearch.description" = "Select a city first to focus on finding the right location.";
+"filter.citySearch.textField.title" = "Your city";
+"filter.showResults.title" = "Show results";
+"filter.selection.subtitle" = "Select one or more options.";
+"filter.main.clearAll.alert.title" = "Are you sure you want to remove all selected filters?";
+"filter.main.clearAll.alert.subtitle" = "This option will reset all filters settings to default settings.";
+"filter.main.clearAll.alert.action.do" = "Clear all filters";
+"filter.main.clearAll.alert.action.cancel" = "Back to filters";
+"filter.includedPicker.subtitle.empty" = "Select option";
+
+//Popups
+"popup.scanInProgress.title" = "This option will appear shortly. Stay tuned for Dostupno.UA App ";
+"popup.scanInProgress.description" = "Search for QR Codes Dostupno.UA in your city. Scan and find available locations quickly and conveniently.";
+"popup.profileInProgress.description" = "In \"My Profile\" section, you can add your favorite locations, keep track of updates and customize the app.";
+"popup.volunteerConfirmation.title" = "Thank you for your initiative to become a volunteer of Dostupno.UA ";
+"popup.volunteerConfirmation.description" = "We will contact you soon. Have a good day.";
+
+//Locations
+"locations.facilities.generalImpression" = "General impression";
+"locations.facilities.entrance" = "Entrance";
+"locations.facilities.bathroom" = "WC";
+"locations.facilities.indoor" = "Indoor facilities";
+"locations.facilities.staff" = "Staff";
+"locations.facilities.parking" = "Parking";
+"locations.facilities.bikeParking" = "Bicycle parking";
+"locations.facilities.dostupnoRecommends" = "DostupnoRecommends";
+"locations.facilities.children" = "Suitable for children";
+"locations.facilities.pets" = "Pet friendly";
+"locations.facilities.braille" = "Braille font";
+"locations.facilities.address" = "Address";
+"locations.facilities.typeLocation" = "Location type";
+
+"locations.facilities.entranceParameters" = "Entrance parameters:";
+"locations.facilities.entranceWidth" = "Width of entrance:";
+"locations.facilities.entranceHandrailsHeight" = "Handrail height:";
+
+"locations.facilities.bathroomCondition" = "WC condition:";
+"locations.facilities.indoorAdditionally" = "Additionally:";
+"locations.facilities.staffQuality" = "Competence level:";
+"locations.facilities.parking50meters" = "Accessibility within 50 m:";
+"locations.facilities.bikeParkingAvailability" = "Availability:";
+"locations.facilities.childrenAdditionally" = "Additionally:";
+"locations.facilities.petsAccessibility" = "Accessibility:";
+"locations.facilities.brailleAvailability" = "Availability:";
+
+"locations.details.makeRoute" = "Get directions";
+"locations.details.routeActionTitle" = "Get directions with:";
+"locations.details.makeRouteApple" = "Apple Maps";
+"locations.details.makeRouteGoogle" = "Google Maps";
+"locations.details.noData" = "No data";
+
+"startup.download.error.title" = "Oops, an error occurred:(";
+"startup.download.error.message" = "Please click \"Try again\" to continue.";
+"startup.download.error.action.title" = "Try again";
+"startup.lowVersion.error.title" = "Your application needs to be updated";
+"startup.lowVersion.error.action.title" = "Go to AppStore";
+
+// Location Creation Process
+"location.creation.progress.address.title" = "Address";
+"location.creation.progress.name.title" = "Location name";
+"location.creation.progress.type.title" = "Location type";
+"location.creation.progress.entrance.title" = "Entrance";
+"location.creation.progress.bathroom.title" = "Toilet";
+"location.creation.progress.comfort.title" = "Comfort inside";
+"location.creation.progress.description" = "To add new location, please fill out the necessary options: ";
+
+"location.creation.intro.navigation.title" = "Propose location";
+"location.creation.intro.title" = "Would you like to propose a location?";
+"location.creation.intro.description" = "You can join our activities and help Dostupno.UA. Describe a location you'd like to add.";
+"location.creation.intro.startButton.title" = "Start";
+
+//Auth
+"login.facebook" = "Sign in with Facebook";
+"login.google" = "Sign in with Google";
+"login.email" = "Sign in with Email";
+"login.apple" = "Sign in with Apple";
+
+"register.intro.title" = "Find out more about Dostupno.UA or sign up.";
+"register.intro.subtitle" = "Choose the necessary option:";
+
+"login.navigationBar.title" = "Log in";
+"login.headerLabel.title" = "Log in to enjoy full access to the app.";
+"login.topLabel.title" = "Choose the best option:";
+"login.bottomLabel.title" = "Don't have Dostupno.UA profile yet?";
+"login.registerButton.title" = "Then create it";
+"login.email.placeholder" = "Your nickname/ email / phone number";
+"login.password.placeholder" = "Password";
+"login.password.recovery" = "Remind password";
+"login.password.limit.charactersAmount" = "8+ characters";
+"login.password.limit.uppercase" = "Uppercase";
+"login.password.limit.numbers" = "Number";
+
+"register.navigationBar.title" = "Sign up";
+"register.headerLabel.title" = "Sign up to enjoy full access to the app.";
+"register.topLabel.title" = "The sign up process only takes a few minutes. Then you can create the lists of your favorite places, comment articles, create announcements on our board.";
+"register.bottomLabel.title" = "Already have a Dostupno.UA profile?";
+"register.loginButton.title" = "Then log in";
+"register.name.placeholder" = "Name";
+"register.email.placeholder" = "Email";
+
+"register.createPassword.placeholder" = "Type a password";
+"register.repeatPassword.placeholder" = "Type the password again";
+"register.registerButton.title" = "Sign up";
+"register.userAgreement.totalText" = "I agree to the processing of my personal data, according to the User Agreement.";
+"register.userAgreement.linkText" = "User Agreement";
+
+"completeRegistration.topLabel.title" = "There is one step left to start using the app.";
+"completeRegistration.bottomLabel.title" = "An one-time password has been sent to your mailbox to activate your profile. Please, enter it in the following field.";
+"completeRegistration.activateButton.title" = "Activate";
+
+"permission.location.title" = "Location Permission";
+"permission.location.description" = "Please go to the Settings and turn on the permission";
+"permission.location.button.title" = "Settings";
+
+"profile.display.navigation.title" = "Your profile";
+
+"restorePassword.navigation.title" = "Remind password";
+"restorePassword.headerLabel.title" = "Restore password";
+"restorePassword.descriptionLabel.title" = "Please enter email address you used to sign up. We will send you a one-time password to restore your profile.";
+"restorePassword.email.placeholder" = "Email";
+"restorePassword.button.title" = "Restore password";
+
+"restorePassword.newPassword.headerLabel.title" = "One-time password";
+"restorePassword.newPassword.descriptionLabel.title" = "An one-time password has been sent to your mailbox to restore your profile. Please, enter it in the following field.";
+"restorePassword.newPassword.newPasswordLabel" = "Enter a new password";
+"restorePassword.newPassword.tempPass.placeholder" = "Your password";
+"restorePassword.newPassword.newPass.placeholder" = "Create a new password";
+"restorePassword.newPassword.repeatNewPass.placeholder" = "Enter the password again";
+"restorePassword.newPassword.button.title" = "Create a new password";
+
+"volunteer.registrationComplete" = "Welcome! You have successfully signed up";
+
+"editProfile.navigation.title" = "Edit Profile";
+"editProfile.photo.edit" = "Edit";
+
+"editProfile.info.header" = "Edit my personal data";
+"editProfile.info.namePlaceholder" = "Name";
+"editProfile.info.surnamePlaceholder" = "Last name";
+"editProfile.info.emailPlaceholder" = "Email";
+"editProfile.info.phonePlaceholder" = "Phone number";
+"editProfile.info.cityPlaceholder" = "Kyiv (your city)";
+
+"editProfile.password.header" = "Change password";
+"editProfile.password.oldPlaceholder" = "Old password";
+"editProfile.password.newPlaceholder" = "New password";
+"editProfile.password.confirmNewPlaceholder" = "Confirm a new password";
+"editProfile.password.changeButton" = "Change password";
+
+"validationTextField.format" = "Follow the format:";
+
+"network.reachability.available" = "Internet is available";
+"network.reachability.unavailable" = "Internet is unavailable";
+
+"imagePicker.takePhoto" = "Take a photo";
+"imagePicker.selectPhoto" = "Pick a photo";
+"imagePicker.deletePhoto" = "Delete";
+
+//Links
+"link.aboutDostupno" = "https://dostupno.ua/en/pro-nas/";
+"link.supportDostupno" = "https://dostupno.ua/en/support-project/";
+"link.profile.site" = "https://dostupno.ua/en";
+"link.profile.volonteer" = "https://dostupno.ua/en/#become-a-volunteer";
+"link.registration.userAgreement" = "https://dostupno.ua/en/terms-and-conditions/";
+"link.articles.url" = "https://dostupno.ua/en/article/";
+
+//QR Code
+"scanner.qrcode.detected.title" = "QR-сode detected";
+"scanner.open.link.browser" = "Open link";
+"scanner.continue" = "Continue scanning";
+"scanner.reader.unavailable" = "Please allow camera access in phone settings";
+"scanner.navigation.title" = "QR-code scanner";
+"scanner.settings.title" = "Settings";
+
+//Language
+"language.title" = "Languages";
+"language.english.title" = "English";
+"language.ukrainian.title" = "Українська";
+
+//Comments
+"comments.title" = "Location's comments";
+"comments.error.retry" = "Retry";
+"comments.empty.title" = "There is no comments for this location";
+"comments.new.title" = "Comment";
+"comments.new.input.title" = "Leave a comment";
+"comments.new.input.placeholder" = "Describe your impression of location";
+"comments.new.send.success.title" = "The comment was sent and will be available after administrator review";
+"comments.new.send.success.buttonTitle" = "Sent successfully";
+
+//Errors
+"error.comments.new.notAllowed" = "Administrator turned off commenting for this location";
+"error.comments.new.notAuthorized" = "You are not allowed to comment on this location";
+"error.comments.new.isEmpty" = "Comment field is empty";
+"error.comments.emptyPostId" = "This location does not exist anymore";
+"error.userProfile.notLoggedInUser" = "User is not signed in";
+"error.userProfile.forbidden" = "You have no access to the profile information";
+"error.updateUserProfile.inputData" = "Check input data in order to update profile";
+"error.login.config" = "Server configuration error. Please contact administrator";
+"error.login.pendingUser" = "Please complete login process";
+"error.login.wrongAuthMethod" = "Wrong authentification method for this e-mail";
+"error.login.email" = "Incorrect e-mail";
+"error.login.password" = "Type in your password";
+"error.login.incorrectPassword" = "Incorrect login or password";
+"error.login.fb" = "Error occurred while logging in with your Facebook account";
+"error.login.google" = "Error occurred while logging in with your Google account";
+"error.login.apple" = "Error occurred while logging in with your Apple account";
+"error.register.emptyName" = "Type in your name";
+"error.register.invalidEmail" = "Invalid e-mail";
+"error.register.userExist" = "This e-mail address has already been used";
+"error.register.emptyPassword" = "Type in your password";
+"error.register.weakPassword" = "Weak password. Choose complex password instead";
+"error.register.badConfig" = "Server configuration error. Please contact administrator";
+"error.register.badEmail" = "Check e-mail field";
+"error.register.badPasssword" = "Incorrect password";
+"error.register.fb" = "Error occurred while logging in with your Facebook account";
+"error.register.google" = "Error occurred while logging in with your Google account";
+"error.register.apple" = "Error occurred while logging in with your Apple account";
+"error.completeRegistration.wrongKey" = "Wrong key";
+"error.completeRegistration.invalidEmail" = "Invalid e-mail";
+"error.unexpected.response" = "Unexpected server response";
+"error.favourites.update" = "Location update error";
+"error.favourites.id" = "Location ID error";
+"error.resetPassword.invalidEmail" = "Invalid e-mail";
+"error.confirmPassword.emptyPassword" = "Type in password";
+"error.confirmPassword.weakPassword" = "Weak password. Choose complex password instead";
+"error.confirmPassword.wrongKey" = "Wrong key";
+"error.confirmPassword.invalidEmail" = "Invalid e-mail";

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration View Controller-->
+        <scene sceneID="QDm-dF-HD5">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" id="hOK-fu-lCx" customClass="RegistrationViewController" customModule="TosMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0vy-fR-FZM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuR-Zv-4a2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbo-VR-TRb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зареєструйтеся, щоб повноцінно користуватися додатком." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbs-ys-SbW">
+                                                <rect key="frame" x="20" y="24" width="374" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <color key="textColor" name="warmGrey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm2-6R-HYF">
+                                                <rect key="frame" x="20" y="89.5" width="374" height="47"/>
+                                                <string key="text">Реєстрація займає кiлька хвилин. Ви зможете створювати списки улюблених місць, коментувати статті, створювати оголошення на нашій дошці.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="warmGrey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-N6-VI7" customClass="TextFieldView" customModule="TosMap" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="151.5" width="374" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="eAm-BY-3RJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-0a-b4U" customClass="TextFieldView" customModule="TosMap" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="226.5" width="374" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="X7a-79-tfb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTE-SF-nZB" customClass="TextFieldView" customModule="TosMap" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="306.5" width="374" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="am5-mU-m0S"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPt-gB-Egq" customClass="TextFieldView" customModule="TosMap" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="386.5" width="374" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="b6c-Ua-4la"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вже маєте профіль Доступно.UA?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-oT-YOB">
+                                                <rect key="frame" x="20" y="621" width="374" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="warmGrey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8W-EI-u0L">
+                                                <rect key="frame" x="20" y="642" width="174" height="28"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="То увійдіть у свій профіль">
+                                                    <color key="titleColor" name="ickyGreen"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButtonAction:" destination="hOK-fu-lCx" eventType="touchUpInside" id="GO5-Px-5bA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHD-HG-bEM" customClass="AuthorizationButton" customModule="TosMap" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="541" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="78f-X6-Pao"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Зареєструватись">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registrationButtonAction:" destination="hOK-fu-lCx" eventType="touchUpInside" id="7cu-Kz-m2K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-Bc-0sb">
+                                                <rect key="frame" x="20" y="476.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="QE2-vj-khX"/>
+                                                    <constraint firstAttribute="height" constant="25" id="ddQ-u1-e4p"/>
+                                                </constraints>
+                                                <state key="normal" image="rulesUncheck"/>
+                                                <state key="selected" image="rulesCheck"/>
+                                                <connections>
+                                                    <action selector="confirmRulesAction:" destination="hOK-fu-lCx" eventType="touchUpInside" id="eGO-Mr-Ohb"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing " translatesAutoresizingMaskIntoConstraints="NO" id="oZB-ue-bkm">
+                                                <rect key="frame" x="50" y="471.5" width="344" height="49.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vm2-6R-HYF" firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="0eq-ts-OQj"/>
+                                            <constraint firstItem="lTE-SF-nZB" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="229-M7-yyc"/>
+                                            <constraint firstItem="gVp-N6-VI7" firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="2OU-Sb-BeP"/>
+                                            <constraint firstItem="h8O-0a-b4U" firstAttribute="leading" secondItem="gVp-N6-VI7" secondAttribute="leading" id="4jU-Ko-bbo"/>
+                                            <constraint firstItem="lTE-SF-nZB" firstAttribute="top" secondItem="h8O-0a-b4U" secondAttribute="bottom" constant="10" id="7xN-dE-zwU"/>
+                                            <constraint firstItem="vm2-6R-HYF" firstAttribute="top" secondItem="nbs-ys-SbW" secondAttribute="bottom" constant="15" id="8BQ-28-m2f"/>
+                                            <constraint firstItem="dHD-HG-bEM" firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="9zK-D9-Sn3"/>
+                                            <constraint firstItem="gVp-N6-VI7" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="AQf-vB-gZh"/>
+                                            <constraint firstItem="IY7-oT-YOB" firstAttribute="top" secondItem="dHD-HG-bEM" secondAttribute="bottom" constant="20" id="Bic-WO-CoA"/>
+                                            <constraint firstItem="h8O-0a-b4U" firstAttribute="top" secondItem="gVp-N6-VI7" secondAttribute="bottom" constant="5" id="I4h-xm-edv"/>
+                                            <constraint firstItem="h8O-0a-b4U" firstAttribute="trailing" secondItem="gVp-N6-VI7" secondAttribute="trailing" id="KMr-Ls-CW4"/>
+                                            <constraint firstItem="YIj-Bc-0sb" firstAttribute="top" secondItem="hPt-gB-Egq" secondAttribute="bottom" constant="20" id="Mw5-q9-F3i"/>
+                                            <constraint firstItem="vm2-6R-HYF" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="Mz3-hg-zdQ"/>
+                                            <constraint firstItem="YIj-Bc-0sb" firstAttribute="leading" secondItem="hPt-gB-Egq" secondAttribute="leading" id="P0q-DU-s1Y"/>
+                                            <constraint firstItem="nbs-ys-SbW" firstAttribute="top" secondItem="Dbo-VR-TRb" secondAttribute="top" constant="24" id="Vzf-UX-BAN"/>
+                                            <constraint firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" constant="20" id="YiS-Uo-jKH"/>
+                                            <constraint firstItem="gVp-N6-VI7" firstAttribute="top" secondItem="vm2-6R-HYF" secondAttribute="bottom" constant="15" id="Z2v-NT-hRQ"/>
+                                            <constraint firstItem="oZB-ue-bkm" firstAttribute="trailing" secondItem="hPt-gB-Egq" secondAttribute="trailing" id="ZCc-Tt-ffv"/>
+                                            <constraint firstItem="dHD-HG-bEM" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="a9s-LA-owH"/>
+                                            <constraint firstItem="E8W-EI-u0L" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="bUr-m5-DHq"/>
+                                            <constraint firstItem="nbs-ys-SbW" firstAttribute="leading" secondItem="Dbo-VR-TRb" secondAttribute="leading" constant="20" id="bmS-tW-Kcx"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="E8W-EI-u0L" secondAttribute="bottom" constant="10" id="cY6-z1-ep9"/>
+                                            <constraint firstItem="lTE-SF-nZB" firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="cri-S2-ZjN"/>
+                                            <constraint firstItem="hPt-gB-Egq" firstAttribute="leading" secondItem="lTE-SF-nZB" secondAttribute="leading" id="dNP-EP-Bg4"/>
+                                            <constraint firstItem="oZB-ue-bkm" firstAttribute="top" secondItem="YIj-Bc-0sb" secondAttribute="top" constant="-5" id="gwV-FR-uw6"/>
+                                            <constraint firstItem="hPt-gB-Egq" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="hJ7-1m-yf1"/>
+                                            <constraint firstItem="IY7-oT-YOB" firstAttribute="leading" secondItem="nbs-ys-SbW" secondAttribute="leading" id="hc2-Xi-4tW"/>
+                                            <constraint firstItem="E8W-EI-u0L" firstAttribute="top" secondItem="IY7-oT-YOB" secondAttribute="bottom" constant="5" id="mva-IY-403"/>
+                                            <constraint firstItem="IY7-oT-YOB" firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="p8Q-N0-S7O"/>
+                                            <constraint firstItem="hPt-gB-Egq" firstAttribute="top" secondItem="lTE-SF-nZB" secondAttribute="bottom" constant="10" id="pzM-1A-FuS"/>
+                                            <constraint firstItem="dHD-HG-bEM" firstAttribute="top" secondItem="oZB-ue-bkm" secondAttribute="bottom" constant="20" id="ra3-MU-slv"/>
+                                            <constraint firstItem="hPt-gB-Egq" firstAttribute="trailing" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="sWh-jO-rKd"/>
+                                            <constraint firstItem="hPt-gB-Egq" firstAttribute="trailing" secondItem="lTE-SF-nZB" secondAttribute="trailing" id="szS-ap-mpv"/>
+                                            <constraint firstItem="E8W-EI-u0L" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nbs-ys-SbW" secondAttribute="trailing" id="t9k-Xb-st1"/>
+                                            <constraint firstItem="oZB-ue-bkm" firstAttribute="leading" secondItem="YIj-Bc-0sb" secondAttribute="trailing" constant="5" id="xke-MR-gjV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dbo-VR-TRb" firstAttribute="top" secondItem="iuR-Zv-4a2" secondAttribute="top" id="8fW-6i-NVt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dbo-VR-TRb" secondAttribute="trailing" id="BLz-e2-HS3"/>
+                                    <constraint firstItem="Dbo-VR-TRb" firstAttribute="leading" secondItem="iuR-Zv-4a2" secondAttribute="leading" id="JM1-oy-kZG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dbo-VR-TRb" secondAttribute="bottom" id="WiO-HX-jST"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dbo-VR-TRb" secondAttribute="bottom" id="tzj-oz-UL7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="white247"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iuR-Zv-4a2" secondAttribute="trailing" id="3in-6s-yZc"/>
+                            <constraint firstItem="iuR-Zv-4a2" firstAttribute="top" secondItem="gef-aV-GSH" secondAttribute="top" id="9NY-oR-yDE"/>
+                            <constraint firstAttribute="bottom" secondItem="iuR-Zv-4a2" secondAttribute="bottom" id="LYq-sQ-3Xk"/>
+                            <constraint firstItem="Dbo-VR-TRb" firstAttribute="width" secondItem="gef-aV-GSH" secondAttribute="width" id="fd3-2Y-kjY"/>
+                            <constraint firstItem="Dbo-VR-TRb" firstAttribute="height" secondItem="gef-aV-GSH" secondAttribute="height" priority="250" id="wvO-ku-kAv"/>
+                            <constraint firstItem="iuR-Zv-4a2" firstAttribute="leading" secondItem="0vy-fR-FZM" secondAttribute="leading" id="xX0-QR-2D4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gef-aV-GSH"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="IY7-oT-YOB" id="rOt-5Z-LIQ"/>
+                        <outlet property="confirmRulesButton" destination="YIj-Bc-0sb" id="7to-3Q-Yoc"/>
+                        <outlet property="confirmRulesTextView" destination="oZB-ue-bkm" id="VCg-1t-1yP"/>
+                        <outlet property="descriptionLabel" destination="vm2-6R-HYF" id="GlM-GW-280"/>
+                        <outlet property="emailTextField" destination="h8O-0a-b4U" id="bgv-Z6-U3a"/>
+                        <outlet property="headerLabel" destination="nbs-ys-SbW" id="vGJ-cn-Z7P"/>
+                        <outlet property="loginButton" destination="E8W-EI-u0L" id="f6h-tL-DZt"/>
+                        <outlet property="nameTextField" destination="gVp-N6-VI7" id="0gm-l2-RPH"/>
+                        <outlet property="passwordTextField" destination="lTE-SF-nZB" id="8t8-4s-dCD"/>
+                        <outlet property="registrationButton" destination="dHD-HG-bEM" id="f4Y-pr-7EP"/>
+                        <outlet property="repeatPasswordTextField" destination="hPt-gB-Egq" id="Cgf-qA-YJX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqz-eV-FEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="112.5"/>
+        </scene>
+        <!--Complete Registration View Controller-->
+        <scene sceneID="bqf-Lh-0Ps">
+            <objects>
+                <viewController storyboardIdentifier="CompleteRegistrationViewController" id="2oT-5x-xZ9" customClass="CompleteRegistrationViewController" customModule="TosMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LM9-IL-Uxa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зареєструйтеся, щоб повноцінно користуватися додатком." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-gu-4sE">
+                                <rect key="frame" x="20" y="68" width="374" height="50.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntM-tq-jTE">
+                                <rect key="frame" x="20" y="133.5" width="374" height="47"/>
+                                <string key="text">Реєстрація займає кiлька хвилин. Ви зможете створювати списки улюблених місць, коментувати статті, створювати оголошення на нашій дошці.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="warmGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-9v-EMg" customClass="AuthorizationButton" customModule="TosMap" customModuleProvider="target">
+                                <rect key="frame" x="20" y="777" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="w8x-WM-ici"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Активувати">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateButtonAction:" destination="2oT-5x-xZ9" eventType="touchUpInside" id="nH4-kR-3qT"/>
+                                    <action selector="registrationButtonAction:" destination="hOK-fu-lCx" eventType="touchUpInside" id="XU9-to-dEG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIT-2V-w4Q" customClass="DostupnoTextField" customModule="TosMap" customModuleProvider="target">
+                                <rect key="frame" x="20" y="195.5" width="374" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="PUN-wj-vkI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2CP-aZ-s1N" firstAttribute="trailing" secondItem="1Ic-gu-4sE" secondAttribute="trailing" constant="20" id="IQw-Pu-bpF"/>
+                            <constraint firstItem="FIT-2V-w4Q" firstAttribute="trailing" secondItem="ntM-tq-jTE" secondAttribute="trailing" id="KCN-kk-uiQ"/>
+                            <constraint firstItem="1Ic-gu-4sE" firstAttribute="top" secondItem="2CP-aZ-s1N" secondAttribute="top" constant="24" id="Lsv-oO-FLn"/>
+                            <constraint firstItem="2CP-aZ-s1N" firstAttribute="trailing" secondItem="iZN-9v-EMg" secondAttribute="trailing" constant="20" id="MOP-6y-EUH"/>
+                            <constraint firstItem="iZN-9v-EMg" firstAttribute="leading" secondItem="2CP-aZ-s1N" secondAttribute="leading" constant="20" id="NFK-Hv-O0Q"/>
+                            <constraint firstItem="ntM-tq-jTE" firstAttribute="leading" secondItem="1Ic-gu-4sE" secondAttribute="leading" id="Ofa-vW-FCi"/>
+                            <constraint firstItem="1Ic-gu-4sE" firstAttribute="leading" secondItem="2CP-aZ-s1N" secondAttribute="leading" constant="20" id="U4I-it-SQZ"/>
+                            <constraint firstItem="2CP-aZ-s1N" firstAttribute="bottom" secondItem="iZN-9v-EMg" secondAttribute="bottom" constant="25" id="f8u-tL-9hp"/>
+                            <constraint firstItem="FIT-2V-w4Q" firstAttribute="top" secondItem="ntM-tq-jTE" secondAttribute="bottom" constant="15" id="gXT-N6-5uL"/>
+                            <constraint firstItem="ntM-tq-jTE" firstAttribute="trailing" secondItem="1Ic-gu-4sE" secondAttribute="trailing" id="ibO-eF-gJd"/>
+                            <constraint firstItem="FIT-2V-w4Q" firstAttribute="leading" secondItem="ntM-tq-jTE" secondAttribute="leading" id="mGw-v2-k9T"/>
+                            <constraint firstItem="ntM-tq-jTE" firstAttribute="top" secondItem="1Ic-gu-4sE" secondAttribute="bottom" constant="15" id="mQp-fH-adu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2CP-aZ-s1N"/>
+                    </view>
+                    <connections>
+                        <outlet property="activateButton" destination="iZN-9v-EMg" id="HHL-gK-B1o"/>
+                        <outlet property="descriptionLabel" destination="ntM-tq-jTE" id="ych-Ts-g3A"/>
+                        <outlet property="headerLabel" destination="1Ic-gu-4sE" id="DOh-iH-7xg"/>
+                        <outlet property="textField" destination="FIT-2V-w4Q" id="1tv-vY-0Vb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjz-X9-8C6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rulesCheck" width="23" height="24"/>
+        <image name="rulesUncheck" width="23" height="24"/>
+        <namedColor name="ickyGreen">
+            <color red="0.55294117647058827" green="0.70196078431372544" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="warmGrey">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white247">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

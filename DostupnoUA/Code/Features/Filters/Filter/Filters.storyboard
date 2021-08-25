@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Filters View Controller-->
+        <scene sceneID="MD1-NB-sii">
+            <objects>
+                <viewController storyboardIdentifier="FiltersViewController" id="ycU-OW-WdK" customClass="FiltersViewController" customModule="DostupnoUA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fyv-nt-acc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gld-uU-dGT">
+                                <rect key="frame" x="20" y="777" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zDs-WD-fvA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchResultsTapped:" destination="ycU-OW-WdK" eventType="touchUpInside" id="e7Y-j4-pnD"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Egh-WP-zw1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ycU-OW-WdK" id="4DV-BG-tqL"/>
+                                    <outlet property="delegate" destination="ycU-OW-WdK" id="sxl-TZ-3Pt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yj4-xg-79Y" firstAttribute="bottom" secondItem="gld-uU-dGT" secondAttribute="bottom" constant="25" id="Dkl-rm-1zN"/>
+                            <constraint firstItem="gld-uU-dGT" firstAttribute="leading" secondItem="Yj4-xg-79Y" secondAttribute="leading" constant="20" id="UyV-gl-qjV"/>
+                            <constraint firstItem="Yj4-xg-79Y" firstAttribute="trailing" secondItem="gld-uU-dGT" secondAttribute="trailing" constant="20" id="Wgq-Dl-JQz"/>
+                            <constraint firstItem="Egh-WP-zw1" firstAttribute="leading" secondItem="Yj4-xg-79Y" secondAttribute="leading" id="rZr-yf-qJR"/>
+                            <constraint firstItem="Egh-WP-zw1" firstAttribute="top" secondItem="Yj4-xg-79Y" secondAttribute="top" id="tV8-jD-xYc"/>
+                            <constraint firstItem="gld-uU-dGT" firstAttribute="top" secondItem="Egh-WP-zw1" secondAttribute="bottom" constant="10" id="ujo-aR-o7B"/>
+                            <constraint firstItem="Yj4-xg-79Y" firstAttribute="trailing" secondItem="Egh-WP-zw1" secondAttribute="trailing" id="xku-2K-acg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yj4-xg-79Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="showResultsButton" destination="gld-uU-dGT" id="Ntz-lg-glq"/>
+                        <outlet property="tableView" destination="Egh-WP-zw1" id="yaH-wO-eHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIC-Qb-mSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="67"/>
+        </scene>
+    </scenes>
+</document>

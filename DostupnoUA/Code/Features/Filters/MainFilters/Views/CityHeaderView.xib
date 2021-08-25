@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CityHeaderView" customModule="TosMap" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLineView" destination="HqX-3V-ORX" id="r9D-WE-fhh"/>
+                <outlet property="citySelectionButton" destination="yH5-jq-RgO" id="7cq-Uc-ggv"/>
+                <outlet property="filterTitleView" destination="gsE-2E-y29" id="rOQ-Tf-Fnq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HqX-3V-ORX">
+                    <rect key="frame" x="20" y="192" width="374" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="j76-M1-usy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-2E-y29" customClass="FilterTitleView" customModule="TosMap" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="73"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH5-jq-RgO">
+                    <rect key="frame" x="20" y="126" width="374" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="XDN-9X-Uha"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="selectCityTapped:" destination="-1" eventType="touchUpInside" id="4jm-bO-yDu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gsE-2E-y29" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5B0-Mo-XbA"/>
+                <constraint firstItem="yH5-jq-RgO" firstAttribute="top" secondItem="gsE-2E-y29" secondAttribute="bottom" constant="9" id="AA9-cD-uzK"/>
+                <constraint firstItem="gsE-2E-y29" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QN3-4t-Nhv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yH5-jq-RgO" secondAttribute="trailing" constant="20" id="ZRG-z9-aSA"/>
+                <constraint firstItem="HqX-3V-ORX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="duw-rq-Ane"/>
+                <constraint firstItem="HqX-3V-ORX" firstAttribute="top" secondItem="yH5-jq-RgO" secondAttribute="bottom" constant="24" id="eKB-al-tW2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HqX-3V-ORX" secondAttribute="bottom" constant="10" id="gbR-yP-bXP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gsE-2E-y29" secondAttribute="trailing" id="qfC-wS-e6Q"/>
+                <constraint firstItem="yH5-jq-RgO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="tNn-zn-Hig"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HqX-3V-ORX" secondAttribute="trailing" constant="20" id="teX-j4-k5V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="130.43478260869566" y="-70.647321428571431"/>
+        </view>
+    </objects>
+</document>

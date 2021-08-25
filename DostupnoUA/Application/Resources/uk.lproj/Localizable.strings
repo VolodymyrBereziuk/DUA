@@ -1,0 +1,267 @@
+//generic
+"generic.error.unknown" = "Упссс, сталася помилка:(";
+
+"generic.grade.good" = "відмінно";
+"generic.grade.normal" = "добре";
+"generic.grade.bad" = "погано";
+
+"generic.cancel" = "Відмінити";
+
+"generic.supportDostupno.title" = "Підтримати проект";
+"generic.aboutDostupno.title" = "Про Доступно.UA";
+
+//Profile
+"profile.personalData.title" = "Мої персональні дані";
+"profile.actions.title" = "Активності";
+"profile.favouriteLocations.title" = "Улюблені локації";
+"profile.articles.title" = "Статті";
+"profile.offeredLocations.title" = "Запропоновані локації";
+"profile.toDostupnoSite.title" = "Перейти до сайту Доступно.UA";
+"profile.settings.title" = "Налаштування";
+"profile.logout.title" = "Вийти з профілю";
+"profile.addEmail.title" = "Додайте електронну пошту";
+"profile.addPhoneNumber.title" = "Додайте номер телефону";
+"profile.addCity.title" = "Оберіть місто";
+
+//Volunteer
+"volunteer.title" = "Стати волонтером";
+"volunteer.description" = "Ти можеш долучитися до нашої діяльності та допомогти Доступно.UA. Приєднуйся та розкажи про своє бажання бути корисним.";
+"volunteer.button.title" = "Стати волонтером";
+
+//Map
+"map.showLocationsButton.title" = "Показати локації";
+"map.addButton.title" = "Запропонувати локацію";
+"map.search.cancel.title" = "Відмінити";
+"map.search.placeholder" = "Пошук";
+"map.search.showAllResults" = "Показати результати (#VALUE#)";
+"search.placeholder.text" = "На жаль, за вашим запитом\nнічого не знайдено:(";
+
+//Filters
+"filter.title" = "Фільтри";
+"filter.citySearch.title" = "Місто пошуку";
+"filter.citySearch.description" = "Спершу оберіть місто, щоб зосередити пошук потрібної локації.";
+"filter.citySearch.textField.title" = "Ваше місто";
+"filter.showResults.title" = "Показати результати";
+"filter.selection.subtitle" = "Оберіть один або декілька параметрів.";
+"filter.main.clearAll.alert.title" = "Ви впевнені, що хочете скасувати усі вибрані фільтри?";
+"filter.main.clearAll.alert.subtitle" = "Ця опція поверне усі налаштування фільтрів до початкового стану.";
+"filter.main.clearAll.alert.action.do" = "Скасувати фільтри";
+"filter.main.clearAll.alert.action.cancel" = "Повернутися до фільтрів";
+"filter.includedPicker.subtitle.empty" = "Оберіть параметр";
+
+//Popups
+"popup.scanInProgress.title" = "Ця опція скоро з’явиться. Слідкуйте за оновленнями додатку Доступно.UA";
+"popup.scanInProgress.description" = "Шукайте QR-коди Доступно.UA у вашому місті. Скануйте та дізнавайтесь про доступні локації швидко та зручно.";
+"popup.profileInProgress.description" = "У розділі «Мій профіль» ви зможете додати улюблені локації, слідкувати за оновленнями та налаштувати додаток.";
+"popup.volunteerConfirmation.title" = "Дякуємо за вашу ініціативу стати волонтером Доступно.UA";
+"popup.volunteerConfirmation.description" = "Ми зв’яжемося з вами найближчим часом. Гарного дня.";
+
+//Locations
+"locations.facilities.generalImpression" = "Загальне враження";
+"locations.facilities.entrance" = "Вхід";
+"locations.facilities.bathroom" = "Вбиральня";
+"locations.facilities.indoor" = "Зручність всередині";
+"locations.facilities.staff" = "Персонал";
+"locations.facilities.parking" = "Парковка";
+"locations.facilities.bikeParking" = "Велопарковка";
+"locations.facilities.dostupnoRecommends" = "ДоступноРекомендує";
+"locations.facilities.children" = "Підходить для дітей";
+"locations.facilities.pets" = "Вхід з тваринами";
+"locations.facilities.braille" = "Шрифт Брайля";
+"locations.facilities.address" = "Адреса";
+"locations.facilities.typeLocation" = "Тип локації";
+
+"locations.facilities.entranceParameters" = "Параметри входу:";
+"locations.facilities.entranceWidth" = "Ширина входу:";
+"locations.facilities.entranceHandrailsHeight" = "Висота поручнів:";
+
+"locations.facilities.bathroomCondition" = "Стан вбиральні:";
+"locations.facilities.indoorAdditionally" = "Додатково:";
+"locations.facilities.staffQuality" = "Рівень компетенції:";
+"locations.facilities.parking50meters" = "Доступність у радіусі 50 м:";
+"locations.facilities.bikeParkingAvailability" = "Наявність:";
+"locations.facilities.childrenAdditionally" = "Додатково:";
+"locations.facilities.petsAccessibility" = "Доступність:";
+"locations.facilities.brailleAvailability" = "Наявність:";
+
+"locations.details.makeRoute" = "Прокласти маршрут";
+"locations.details.routeActionTitle" = "Прокласти маршрут за допомогою:";
+"locations.details.makeRouteApple" = "Apple Maps";
+"locations.details.makeRouteGoogle" = "Google Maps";
+"locations.details.noData" = "Дані відсутні";
+
+"startup.download.error.title" = "Упссс, сталася помилка:(";
+"startup.download.error.message" = "Будь ласка, натисніть кнопку «Спробувати ще раз» щоб продовжити.";
+"startup.download.error.action.title" = "Спробувати ще раз";
+"startup.lowVersion.error.title" = "Потрібно оновити ваш додаток";
+"startup.lowVersion.error.action.title" = "Перейдіть до AppStore";
+
+// Location Creation Process
+"location.creation.progress.address.title" = "Адреса";
+"location.creation.progress.name.title" = "Назва локації";
+"location.creation.progress.type.title" = "Тип локації";
+"location.creation.progress.entrance.title" = "Вхід";
+"location.creation.progress.bathroom.title" = "Вбиральня";
+"location.creation.progress.comfort.title" = "Зручність всередині";
+"location.creation.progress.description" = "Для додавання нової локації, потрібно заповнити обов’язкові параметри: ";
+
+"location.creation.intro.navigation.title" = "Запропонувати локацію";
+"location.creation.intro.title" = "Бажаєте запропонувати локацію?";
+"location.creation.intro.description" = "Ви можете долучитися до нашої діяльності та допомогти Доступно.UA. Опишіть локацію, що ви бажаєте додати.";
+"location.creation.intro.startButton.title" = "Розпочати";
+
+//Auth
+"login.facebook" = "Вхід з Facebook";
+"login.google" = "Вхід з Google";
+"login.email" = "Вхід по Email";
+"login.apple" = "Вхід з Apple";
+
+"register.intro.title" = "Дізнайтеся більше про діяльність Доступно.UA або зареєструйтесь.";
+"register.intro.subtitle" = "Оберіть потрібну опцію:";
+
+"login.navigationBar.title" = "Увійти";
+"login.headerLabel.title" = "Увійди, щоб користуватися додатком на повну";
+"login.topLabel.title" = "Обери зручний спосіб:";
+"login.bottomLabel.title" = "Ще не маєш профілю Доступно.UA?";
+"login.registerButton.title" = "Створи його зараз! :)";
+"login.email.placeholder" = "Ваш нікнейм / електронна пошта / номер телефону";
+"login.password.placeholder" = "Ваш пароль";
+"login.password.recovery" = "Нагадати пароль";
+"login.password.limit.charactersAmount" = "8+ символів";
+"login.password.limit.uppercase" = "Верхній реєстр";
+"login.password.limit.numbers" ="Цифра";
+
+"register.navigationBar.title" = "Зареєструватись";
+"register.headerLabel.title" = "Зареєструйтеся, щоб повноцінно користуватися додатком.";
+"register.topLabel.title" = "Реєстрація займає кiлька хвилин. Ви зможете створювати списки улюблених місць, коментувати статті, створювати оголошення на нашій дошці.";
+"register.bottomLabel.title" = "Вже маєте профіль Доступно.UA?";
+"register.loginButton.title" = "То увійдіть у свій профіль";
+"register.name.placeholder" = "Ваше Ім’я";
+"register.email.placeholder" = "Ваша електронна адреса";
+
+"register.createPassword.placeholder" = "Створіть пароль";
+"register.repeatPassword.placeholder" = "Введіть пароль повторно";
+"register.registerButton.title" = "Зареєструватись";
+"register.userAgreement.totalText" = "Даю дозвіл на обробку моїх персональних даних, згідно з угодою користувача";
+"register.userAgreement.linkText" = "угодою користувача";
+
+"completeRegistration.topLabel.title" = "Залишився лише один крок до початку користування додатком.";
+"completeRegistration.bottomLabel.title" = "На вказану електронну пошту, вам був надісланий одноразовий пароль для активації вашого профілю. Будь ласка, введіть його у наступному полі.";
+"completeRegistration.activateButton.title" = "Активувати";
+
+"permission.location.title" = "Дозвіл на визначення вашого місця знаходження";
+"permission.location.description" = "Будь ласка, перейдіть у Налаштування та увімкніть дозвіл";
+"permission.location.button.title" = "Налаштування";
+
+"profile.display.navigation.title" = "Ваш профіль";
+
+"restorePassword.navigation.title" = "Нагадати пароль";
+"restorePassword.headerLabel.title" = "Відновлення паролю";
+"restorePassword.descriptionLabel.title" = "Введіть електронну пошту, що ви використали при реєстрації вашого профілю. Ми надішлемо вам одноразовий пароль для відновлення.";
+"restorePassword.email.placeholder" = "Ваша електронна пошта";
+"restorePassword.button.title" = "Відновити пароль";
+
+"restorePassword.newPassword.headerLabel.title" = "Одноразовий пароль";
+"restorePassword.newPassword.descriptionLabel.title" = "На вказану електронну пошту, вам був надісланий одноразовий пароль для відновлення вашого профілю. Будь ласка, введіть його у наступному полі.";
+"restorePassword.newPassword.newPasswordLabel" = "Вкажіть новий пароль";
+"restorePassword.newPassword.tempPass.placeholder" = "Ваш пароль";
+"restorePassword.newPassword.newPass.placeholder" = "Створіть новий пароль";
+"restorePassword.newPassword.repeatNewPass.placeholder" = "Введіть пароль повторно";
+"restorePassword.newPassword.button.title" = "Створіть новий пароль";
+
+"volunteer.registrationComplete" = "Вітаємо з успішною реєстрацією в додатку Доступно.UA";
+
+"editProfile.navigation.title" = "Редагування профілю";
+"editProfile.photo.edit" = "Редагувати";
+
+"editProfile.info.header" = "Відредагувати мої персональні дані";
+"editProfile.info.namePlaceholder" = "Ім’я";
+"editProfile.info.surnamePlaceholder" = "Прізвище";
+"editProfile.info.emailPlaceholder" = "Електронна пошта";
+"editProfile.info.phonePlaceholder" = "Ваш номер телефону";
+"editProfile.info.cityPlaceholder" = "Ваше місто";
+
+"editProfile.password.header" = "Зміна паролю";
+"editProfile.password.oldPlaceholder" = "Старий пароль";
+"editProfile.password.newPlaceholder" = "Новий пароль";
+"editProfile.password.confirmNewPlaceholder" = "Підтвердити новий пароль";
+"editProfile.password.changeButton" = "Змінити пароль";
+
+"validationTextField.format" = "Дотримуйтесь формату:";
+
+"network.reachability.available" = "Мережа Інтернет доступна";
+"network.reachability.unavailable" = "Мережа Інтернет недоступна";
+
+"imagePicker.takePhoto" = "Зробити фото";
+"imagePicker.selectPhoto" = "Обрати фото";
+"imagePicker.deletePhoto" = "Видалити";
+
+//Links
+"link.aboutDostupno" = "https://dostupno.ua/pro-nas/";
+"link.supportDostupno" = "https://dostupno.ua/support-project/";
+"link.profile.site" = "https://dostupno.ua";
+"link.profile.volonteer" = "https://dostupno.ua/#become-a-volunteer";
+"link.registration.userAgreement" = "https://dostupno.ua/pravyla-i-umovy/";
+"link.articles.url" = "https://dostupno.ua/article/";
+
+//QR Code
+"scanner.qrcode.detected.title" = "QR-код визначено";
+"scanner.open.link.browser" = "Відкрити посилання";
+"scanner.continue" = "Продовжити сканування";
+"scanner.reader.unavailable" = "Будь ласка, дозвольте доступ до камери в налаштуваннях телефону";
+"scanner.navigation.title" = "QR-код сканер";
+"scanner.settings.title" = "Налаштування";
+
+//Language
+"language.title" = "Мови";
+"language.english.title" = "English";
+"language.ukrainian.title" = "Українська";
+
+//Comments
+"comments.title" = "Коментарі локації";
+"comments.error.retry" = "Повторити";
+"comments.empty.title" = "Ця локація ще не має коментарів";
+"comments.new.title" = "Коментувати";
+"comments.new.input.title" = "Залишити коментар";
+"comments.new.input.placeholder" = "Опишіть ваше враження від локації";
+"comments.new.send.success.title" = "Коментар додано. Він буде доступний після перевірки адміністратором";
+"comments.new.send.success.buttonTitle" = "Успішне відправлення";
+
+//Errors
+"error.comments.new.notAllowed" = "Адміністратор вимкнув можливість коментування цієї локації";
+"error.comments.new.notAuthorized" = "Ви не маєте можливості коментувати цю локацію";
+"error.comments.new.isEmpty" = "Залиште відгук про локацію";
+"error.comments.emptyPostId" = "Цієї локації вже не існує";
+"error.userProfile.notLoggedInUser" = "Користувач не увійшов у свій профіль";
+"error.userProfile.forbidden" = "Ви не маєте прав отримати інформацію щодо профілю";
+"error.updateUserProfile.inputData" = "Перевірте внесені дані для оновлення профілю";
+"error.login.config" = "Помилка налаштування серверу. Будь ласка, повідомте адміністратора";
+"error.login.pendingUser" = "Ви не завершили реєстрацію. Будь ласка, завершіть її";
+"error.login.wrongAuthMethod" = "Неправильний спосіб входу для цієї електронної пошти";
+"error.login.email" = "Неправильна електронна пошта";
+"error.login.password" = "Ви не вказали пароль";
+"error.login.incorrectPassword" = "Неправильний логін або пароль";
+"error.login.fb" = "Помилка під час входу через Facebook";
+"error.login.google" = "Помилка під час входу через Google";
+"error.login.apple" = "Помилка під час входу через Apple";
+"error.register.emptyName" = "Ви не вказали ім'я";
+"error.register.invalidEmail" = "Некоректна електронна пошта";
+"error.register.userExist" = "Уже існує користувач із цією електронною адресою";
+"error.register.emptyPassword" = "Ви не вказали пароль";
+"error.register.weakPassword" = "Надто простий пароль. Вкажіть складніший пароль";
+"error.register.badConfig" = "Помилка налаштування серверу. Будь ласка, повідомте адміністратора";
+"error.register.badEmail" = "Некоректне або пусте поле \"Електронна пошта\"";
+"error.register.badPasssword" = "Неправильний пароль";
+"error.register.fb" = "Помилка під час входу через Facebooк";
+"error.register.google" = "Помилка під час входу через Google";
+"error.register.apple" = "Помилка під час входу через Apple";
+"error.completeRegistration.wrongKey" = "Неправильний ключ";
+"error.completeRegistration.invalidEmail" = "Неправильна електронна пошта";
+"error.unexpected.response" = "Неочікувана відповідь від сереверу";
+"error.favourites.update" = "Помилка оновлення статусу локації";
+"error.favourites.id" = "Неправильний ідентифікатор локації";
+"error.resetPassword.invalidEmail" = "Неправильна електронна пошта";
+"error.confirmPassword.emptyPassword" = "Ви не вказали пароль";
+"error.confirmPassword.weakPassword" = "Надто простий пароль. Вкажіть складніший пароль";
+"error.confirmPassword.wrongKey" = "Неправильний ключ";
+"error.confirmPassword.invalidEmail" = "Неправильна електронна пошта";

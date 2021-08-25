@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilterCell" rowHeight="64" id="BH4-Df-8Va" customClass="FilterCell" customModule="DostupnoUA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BH4-Df-8Va" id="weI-VN-sFN">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0c-AI-4K1">
+                        <rect key="frame" x="55" y="14" width="291" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1an-Au-V0f">
+                        <rect key="frame" x="0.0" y="0.0" width="55" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="Oso-a4-nMh"/>
+                        </constraints>
+                        <connections>
+                            <action selector="leftButtonTapped:" destination="BH4-Df-8Va" eventType="touchUpInside" id="aJs-bB-zvE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89G-iE-NlN">
+                        <rect key="frame" x="349" y="0.0" width="70" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="QU7-iI-jxJ"/>
+                        </constraints>
+                        <connections>
+                            <action selector="rightButtonTapped:" destination="BH4-Df-8Va" eventType="touchUpInside" id="Ruj-Wi-by2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q0c-AI-4K1" firstAttribute="leading" secondItem="1an-Au-V0f" secondAttribute="trailing" id="3Vm-jV-iNl"/>
+                    <constraint firstItem="1an-Au-V0f" firstAttribute="top" secondItem="weI-VN-sFN" secondAttribute="top" id="45X-KA-mU5"/>
+                    <constraint firstAttribute="bottom" secondItem="Q0c-AI-4K1" secondAttribute="bottom" constant="14" id="712-28-emA"/>
+                    <constraint firstItem="Q0c-AI-4K1" firstAttribute="top" secondItem="weI-VN-sFN" secondAttribute="top" constant="14" id="KnD-Ss-QWL"/>
+                    <constraint firstItem="89G-iE-NlN" firstAttribute="top" secondItem="weI-VN-sFN" secondAttribute="top" id="XlK-8Q-GbW"/>
+                    <constraint firstItem="1an-Au-V0f" firstAttribute="leading" secondItem="weI-VN-sFN" secondAttribute="leading" id="brJ-4j-zY4"/>
+                    <constraint firstAttribute="bottom" secondItem="1an-Au-V0f" secondAttribute="bottom" id="cOk-Px-x5b"/>
+                    <constraint firstItem="89G-iE-NlN" firstAttribute="leading" secondItem="Q0c-AI-4K1" secondAttribute="trailing" constant="3" id="jnV-5Z-Aqy"/>
+                    <constraint firstAttribute="bottom" secondItem="89G-iE-NlN" secondAttribute="bottom" id="lVw-8b-2Ba"/>
+                    <constraint firstAttribute="trailing" secondItem="89G-iE-NlN" secondAttribute="trailing" id="sIq-Wz-b6l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="filterNameLabel" destination="Q0c-AI-4K1" id="sQp-BP-44g"/>
+                <outlet property="leftButton" destination="1an-Au-V0f" id="I08-2f-tqg"/>
+                <outlet property="rightButton" destination="89G-iE-NlN" id="mNu-Gf-wzi"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="-138.61607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

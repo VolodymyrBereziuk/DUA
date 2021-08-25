@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarkerInfoView" customModule="Доступно_MAPS" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="6X9-zz-bAd" id="iCI-Y7-057"/>
+                <outlet property="descriptionLabel" destination="RYs-of-Nxb" id="YgI-I0-FlB"/>
+                <outlet property="imageView" destination="vEu-SX-IXp" id="Mhk-z2-QSq"/>
+                <outlet property="titleLabel" destination="IAJ-2n-Dvq" id="PNQ-MZ-iyd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7ah-7H-XIh">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6X9-zz-bAd">
+                    <rect key="frame" x="3" y="3" width="234" height="116"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дуже-дуже довга назва закладу швидкого харчув…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAJ-2n-Dvq">
+                    <rect key="frame" x="10" y="22.5" width="220" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" name="warmGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Їжа та напої / Заклад швидкого харчування" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYs-of-Nxb">
+                    <rect key="frame" x="34" y="76" width="196" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" name="warmGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationType" translatesAutoresizingMaskIntoConstraints="NO" id="vEu-SX-IXp">
+                    <rect key="frame" x="10" y="76" width="18" height="18"/>
+                    <color key="tintColor" name="slateGrey"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="MJE-zH-QQq"/>
+                        <constraint firstAttribute="height" constant="18" id="oHh-vN-ZWS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6X9-zz-bAd" firstAttribute="top" secondItem="7ah-7H-XIh" secondAttribute="top" constant="3" id="0RG-18-8yO"/>
+                <constraint firstItem="vEu-SX-IXp" firstAttribute="leading" secondItem="IAJ-2n-Dvq" secondAttribute="leading" id="2zv-Hh-YMU"/>
+                <constraint firstItem="IAJ-2n-Dvq" firstAttribute="leading" secondItem="daR-OC-T61" secondAttribute="leading" constant="10" id="57N-Yc-ji1"/>
+                <constraint firstItem="RYs-of-Nxb" firstAttribute="centerY" secondItem="6X9-zz-bAd" secondAttribute="centerY" multiplier="3/2" id="5FW-Ia-Lh5"/>
+                <constraint firstItem="6X9-zz-bAd" firstAttribute="leading" secondItem="daR-OC-T61" secondAttribute="leading" constant="3" id="5gf-ld-45h"/>
+                <constraint firstItem="RYs-of-Nxb" firstAttribute="trailing" secondItem="IAJ-2n-Dvq" secondAttribute="trailing" id="C36-Cl-af1"/>
+                <constraint firstItem="RYs-of-Nxb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IAJ-2n-Dvq" secondAttribute="bottom" constant="5" id="EEu-4n-vEW"/>
+                <constraint firstItem="daR-OC-T61" firstAttribute="bottom" secondItem="6X9-zz-bAd" secondAttribute="bottom" constant="3" id="PT1-t8-ViB"/>
+                <constraint firstItem="IAJ-2n-Dvq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7ah-7H-XIh" secondAttribute="top" constant="10" id="RPe-8s-zma"/>
+                <constraint firstItem="IAJ-2n-Dvq" firstAttribute="centerY" secondItem="6X9-zz-bAd" secondAttribute="centerY" multiplier="2/3" id="Yzo-j2-KvD"/>
+                <constraint firstItem="daR-OC-T61" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RYs-of-Nxb" secondAttribute="bottom" constant="10" id="bpY-Aw-FwR"/>
+                <constraint firstItem="RYs-of-Nxb" firstAttribute="top" secondItem="vEu-SX-IXp" secondAttribute="top" id="dlg-oN-u0q"/>
+                <constraint firstItem="daR-OC-T61" firstAttribute="trailing" secondItem="IAJ-2n-Dvq" secondAttribute="trailing" constant="10" id="eWB-ul-KDW"/>
+                <constraint firstItem="RYs-of-Nxb" firstAttribute="leading" secondItem="vEu-SX-IXp" secondAttribute="trailing" constant="6" id="qxx-KM-Ll4"/>
+                <constraint firstItem="daR-OC-T61" firstAttribute="trailing" secondItem="6X9-zz-bAd" secondAttribute="trailing" constant="3" id="yOk-w9-UwT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="daR-OC-T61"/>
+            <point key="canvasLocation" x="89.855072463768124" y="8.7053571428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="locationType" width="18" height="18"/>
+        <namedColor name="slateGrey">
+            <color red="0.40392156862745099" green="0.40392156862745099" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="warmGrey">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

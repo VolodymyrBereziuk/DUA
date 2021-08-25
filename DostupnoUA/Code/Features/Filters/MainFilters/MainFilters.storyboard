@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Filters View Controller-->
+        <scene sceneID="5Ss-wr-tPy">
+            <objects>
+                <viewController storyboardIdentifier="MainFiltersViewController" id="wys-7b-sh9" customClass="MainFiltersViewController" customModule="DostupnoUA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bae-dF-c7f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nut-QQ-h01">
+                                <rect key="frame" x="0.0" y="44" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wys-7b-sh9" id="vMk-Ld-ABG"/>
+                                    <outlet property="delegate" destination="wys-7b-sh9" id="RyV-xq-Jzp"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2g-7i-m6e">
+                                <rect key="frame" x="20" y="777" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5UJ-U9-o3Z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="wys-7b-sh9" eventType="touchUpInside" id="tTC-Zd-kgS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aEu-kJ-hdP" firstAttribute="bottom" secondItem="u2g-7i-m6e" secondAttribute="bottom" constant="25" id="16z-Ft-nM1"/>
+                            <constraint firstItem="aEu-kJ-hdP" firstAttribute="trailing" secondItem="Nut-QQ-h01" secondAttribute="trailing" id="HSl-re-Ceh"/>
+                            <constraint firstItem="aEu-kJ-hdP" firstAttribute="trailing" secondItem="u2g-7i-m6e" secondAttribute="trailing" constant="20" id="SQQ-5n-hml"/>
+                            <constraint firstItem="Nut-QQ-h01" firstAttribute="top" secondItem="aEu-kJ-hdP" secondAttribute="top" id="pVP-4w-fEw"/>
+                            <constraint firstItem="Nut-QQ-h01" firstAttribute="leading" secondItem="aEu-kJ-hdP" secondAttribute="leading" id="pu8-pV-hbT"/>
+                            <constraint firstItem="u2g-7i-m6e" firstAttribute="leading" secondItem="aEu-kJ-hdP" secondAttribute="leading" constant="20" id="wJl-cP-eoe"/>
+                            <constraint firstItem="u2g-7i-m6e" firstAttribute="top" secondItem="Nut-QQ-h01" secondAttribute="bottom" constant="10" id="yNR-en-Ycg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aEu-kJ-hdP"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchButton" destination="u2g-7i-m6e" id="vVn-RT-zfK"/>
+                        <outlet property="tableView" destination="Nut-QQ-h01" id="Dna-H2-xsQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTU-ea-6V3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.59420289855075" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
